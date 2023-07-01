@@ -1,0 +1,12 @@
+.navbar {
+    height: 80px;
+    background: #fff;
+}
+.navbar .navbar-brand {
+    font-size: 30px;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 22px;
+    background: #aaa;
+    margin-right: 5px;
+}
