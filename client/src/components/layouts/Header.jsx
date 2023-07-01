@@ -7,28 +7,38 @@ const Header = () => {
     <header id="header">
       <nav className="navbar navbar-expand-lg shadow">
         <div className="container">
-          <Link className="navbar-brand" to={'/'} >
+          <Link className="navbar-brand" to={"/"}>
             OLMA
           </Link>
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to={'/'} >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/about"}>
-                  About
-                </Link>
-              </li>
+          <ul className="navbar-nav mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link" to={"/"}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/about"}>
+                About
+              </Link>
+            </li>
 
-              <li className="nav-item">
-                <Link className="nav-link " to={"/contact"}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <li className="nav-item">
+              <Link className="nav-link " to={"/contact"}>
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to={"/login"}>
+                Login
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to={"/register"}>
+                Register
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
