@@ -1,7 +1,12 @@
-import { REGISTER_SUCCESS } from "../constants/authConstant";
+import {
+  // AUTH_USER,
+  LOGIN_SUCCESS,
+  LOGOUT,
+  REGISTER_SUCCESS,
+} from "../constants/authConstant";
 
 const initialState = {
-  auth: null,
+  auth: JSON.parse(localStorage.getItem("user")),
   error: false,
   loading: false,
 };
@@ -12,6 +17,18 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         auth: action.payload,
+      };
+
+    case LOGIN_SUCCESS:
+      return {
+        ...state,
+        auth: action.payload,
+        error: false,
+      };
+
+    case LOGOUT:
+      return {
+        auth: null,
       };
 
     default:
